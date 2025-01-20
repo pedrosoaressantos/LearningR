@@ -1,0 +1,57 @@
+---
+title: "Basic Data Types"
+author: "Pedro Soares dos Santos"
+date: "2025-01-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Vector Creation 
+
+Double variables
+
+```{r}
+double_var <- c(2, 3.4, 0, 7.8)
+```
+
+Integer variables
+
+```{r}
+integer_var <- c(2L, 4L, 15L)
+```
+
+Boolean variables 
+
+```{r}
+logical_var <- c(TRUE, FALSE, F, T)
+```
+
+Character variables
+
+```{r}
+char_var <- c("4", "test", "dont speak")
+```
+
+# Types 
+```{r}
+typeof(double_var)
+```
+```{r}
+is.double(double_var)
+is.double(integer_var)
+is.numeric(double_var)
+```
+# Type Coercion 
+
+```{r}
+typeof(c(1L,2L,3))
+```
+```{r}
+as.logical(as.integer(double_var))
+as.numeric(char_var)
+```
+
+

@@ -1,0 +1,31 @@
+---
+title: "Matrices and Arrays"
+author: "Pedro Soares dos Santos"
+date: "2025-01-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Matrices
+
+```{r}
+vec1 <- 1:24
+mat1 <- matrix(data = vec1, nrow = 6, ncol = 4, byrow = T)
+mat1 
+```
+
+#Array 
+
+```{r}
+arr1 <- array(data = vec1, dim = c(3, 4, 2))
+arr1
+```
+
+
+arr2 <- arr1
+dim(arr2) <- c(2,2,6)
+arr2
+

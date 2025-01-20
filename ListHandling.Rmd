@@ -1,0 +1,22 @@
+---
+title: "ListHandling"
+author: "Pedro Soares dos Santos"
+date: "2025-01-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library("listviewer")
+```
+
+# Introduction 
+
+```{r}
+
+```
+
+
