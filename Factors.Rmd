@@ -1,0 +1,35 @@
+---
+title: "Factors"
+author: "Pedro Soares dos Santos"
+date: "2025-01-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Creation 
+ 
+```{r}
+x <- factor(c("a", "b", "c", "d", "e"))
+x
+```
+```{r}
+x[1] <- "f"
+x
+```
+
+```{r}
+factor1 <- factor("first")
+factor2 <- factor("second")
+c(factor1, factor2)
+```
+```{r}
+worktype_char <- c("employed", "unemployed", "employed")
+worktype_factor <- factor(x = worktype_char, levels = c("employed", "unemployed", "retired"))
+worktype_factor
+
+table(worktype_factor)
+```
+
